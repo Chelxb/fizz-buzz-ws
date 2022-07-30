@@ -1,0 +1,54 @@
+# Projet fizz-buzz-ws
+
+**NOTE** : An English version of this README is available link:./README.adoc[here]
+
+image:https://img.shields.io/github/license/Chelxb/fizz-buzz-ws?style=for-the-badge[link=./LICENSE]
+
+Ce projet est une web service RESTful fournissant un FizzBuzz générique. +
+Il utilise le framework Java Quarkus.
+Si vous voulez en apprendre plus sur Quakus, visitez le site link:https://quarkus.io/[] (en anglais). 
+
+## Prérequis
+
+Pour développer ou compiler l'application vous devez disposer de :
+
+* Java Development Kit 17 ou supérieur
+* Maven 3.8.6 ou supérieur
+
+Optionnellement pour exécuter le conteneur en local :
+
+* Docker
+
+## Feuille de route
+
+Cette feuille de route indique les fonctionnalités et améliorations futures du projet:
+
+* [*] Initialiser le dépôt
+* [ ] Mettre en place l'intégration continue de l'application
+* [ ] Implémenter un algorithme simple
+* [ ] Fournir une spécification OpenAPI
+* [ ] Améliorer les performances si nécessaire
+* [ ] Permettre le déploiment de l'application sur une platforme cloud
+* [ ] Ajouter des indicateurs
+* [ ] À suivre...
+
+## Lancer l'application en mode dev
+
+Vous pouvez lancer l'application en mode dev ce qui active le *live reload* :
+
+```shell script
+mvn quarkus:dev
+```
+
+Pour accéder à l'interface Quakus Dev, allez à l'adresse http://localhost:8080/q/dev/.
+
+## Packaging and running the application
+
+L'application peut être packagée en utilisant la commade :
+
+```shell script
+mvn package
+```
+Cela va produire le fichier `quarkus-run.jar` dans le dossier `target/quarkus-app/`. Les dépendances sont copiées dans le dossier `target/quarkus-app/lib/`.
+
+L'application peut maintenant être exécutée avec la commande `java -jar target/quarkus-app/quarkus-run.jar`.
