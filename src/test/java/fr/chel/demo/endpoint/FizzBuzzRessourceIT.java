@@ -1,4 +1,4 @@
-package fr.chel.demo;
+package fr.chel.demo.endpoint;
 
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.Test;
@@ -7,7 +7,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.is;
 
 @QuarkusTest
-public class FizzBuzzRessourceTest {
+public class FizzBuzzRessourceIT {
 
     @Test
     public void testHelloEndpoint() {
