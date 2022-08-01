@@ -3,12 +3,14 @@ package fr.chel.demo.endpoint;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.is;
 
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
-import io.quarkus.test.junit.QuarkusIntegrationTest;
+import io.quarkus.test.junit.QuarkusTest;
 
-@QuarkusIntegrationTest
-public class FizzBuzzRessourceIT {
+@QuarkusTest
+@Tag("integration")
+public class FizzBuzzRessourceTest {
 
     @Test
     public void testHelloEndpoint() {
