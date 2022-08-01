@@ -31,8 +31,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONARCLOUD_TOKEN }}
-      run: mvn sonar:sonar \
-              -Dsonar.host.url=https://sonarcloud.io \
-              -Dsonar.organization=chelxb \
-              -Dsonar.projectKey=Chelxb_fizz-buzz-ws \
-              -Dsonar.coverage.jacoco.xmlReportPaths=target/jacoco-report/jacoco.xml
+      run: mvn sonar:sonar 
+        -Dsonar.host.url=https://sonarcloud.io 
+        -Dsonar.organization=chelxb 
+        -Dsonar.projectKey=Chelxb_fizz-buzz-ws 
+        -Dsonar.coverage.jacoco.xmlReportPaths=target/jacoco-report/jacoco.xml
