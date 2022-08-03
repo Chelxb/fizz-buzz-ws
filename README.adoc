@@ -2,7 +2,8 @@
 
 **NOTE** : Une version française de ce README est disponible link:./README_fr.adoc[ici]
 
-image:https://img.shields.io/github/license/Chelxb/fizz-buzz-ws?style=for-the-badge[link=./LICENSE]
+image:https://img.shields.io/github/license/Chelxb/fizz-buzz-ws?style=flat[link=./LICENSE]
+image:https://sonarcloud.io/api/project_badges/measure?project=Chelxb_fizz-buzz-ws&metric=alert_status[link=https://sonarcloud.io/project/information?id=Chelxb_fizz-buzz-ws]
 
 This project is RESTful web service providing a generic FizzBuzz. +
 It uses the Java framework Quarkus.
@@ -13,13 +14,18 @@ If you want to learn more about Quarkus, please visit its website: link:https://
 This roadmap indicates the foreseen features and improvements to the project :
 
 * [*] Init the repository
-* [ ] Implement the projet CI
+* [*] Implement the projet CI
 * [ ] Implement a basic algorithm
 * [ ] Provide Open API specification
 * [ ] Improve performance if needed
 * [ ] Allow the application deployment on a cloud platform 
 * [ ] Add metrics
 * [ ] Yet to come...
+
+## Sonar Cloud code analysis
+
+The projet is analyzed on SonarCloud on each pull request and after each push on master.  You can find the SonarCloud project page : link:https://sonarcloud.io/project/overview?id=Chelxb_fizz-buzz-ws[here]. +
+For the time being the quality gate is the Sonar default. It would be modified, should the need arise.
 
 ## Requirements
 
