@@ -5,7 +5,7 @@ name: Run all tests
 on:
   workflow_dispatch:
   push:
-    branches: [ "github_actions" ]
+    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
   schedule:
